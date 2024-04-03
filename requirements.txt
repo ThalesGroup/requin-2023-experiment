@@ -5,6 +5,6 @@ importlib-resources==6.1.1
 moviepy==1.0.3
 numpy==1.24.3
 pillow==10.2.0
-pytest==7.4.4
+pytest==8.1.1
 scipy==1.12.0
 setuptools==69.0.3
