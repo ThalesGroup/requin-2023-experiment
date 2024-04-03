@@ -1,6 +1,6 @@
 [![Project generated with PyScaffold](https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold)](https://pyscaffold.org/)
 
-# matbexp
+# requin-2023-experiment
 
 > Generation of files for Requin Experiment 2023
 
@@ -12,7 +12,7 @@ This project allows the generation of files used in the experiment described in 
 You can install the project via the following command:
 
 ```
-git clone https://github.com/danibenethales/matbexp
+git clone https://github.com/ThalesGroup/requin-2023-experiment.git
 pip install -e .
 ```
 
