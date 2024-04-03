@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<MATB-EVENTS>
+<event startTime="0:00:00">
+	<control>START</control>
+</event>
+<event startTime="0:00:01">
+	<sched>
+		<task>RESSYS</task>
+		<action>START</action>
+		<update>NULL</update>
+		<response>NULL</response>
+	</sched>
+</event>
+<event startTime="0:00:02">
+	<sched>
+		<task>TRACK</task>
+		<action>MANUAL</action>
+		<update>HIGH</update>
+		<response>MEDIUM</response>
+	</sched>
+</event>
+<event startTime="00:00:16">
+	<!--Sched task-->
+	<sched>
+		<task>COMM</task>
+		<action>START</action>
+		<update>NULL</update>
+		<response>NULL</response>
+	</sched>
+</event>
+<event startTime="00:00:21">
+	<!--Communications task-->
+	<comm>
+		<ship>OTHER</ship>
+		<radio>NAV2</radio>
+		<freq>110.800</freq>
+	</comm>
+</event>
+<event startTime="00:00:51">
+	<!--Communications task-->
+	<comm>
+		<ship>OWN</ship>
+		<radio>COM1</radio>
+		<freq>127.550</freq>
+	</comm>
+</event>
+<event startTime="00:01:20">
+	<!--System Monitoring task-->
+	<sysmon>
+		<monitoringLightType>RED</monitoringLightType>
+	</sysmon>
+</event>
+<event startTime="00:01:36">
+	<!--Communications task-->
+	<comm>
+		<ship>OTHER</ship>
+		<radio>COM2</radio>
+		<freq>132.800</freq>
+	</comm>
+</event>
+<event startTime="00:01:57">
+	<!--System Monitoring task-->
+	<sysmon>
+		<monitoringLightType>RED</monitoringLightType>
+	</sysmon>
+</event>
+<event startTime="00:02:23">
+	<!--Resman task - Fail-->
+	<resman>
+		<fail>P3</fail>
+	</resman>
+</event>
+<event startTime="00:02:47">
+	<!--Communications task-->
+	<comm>
+		<ship>OTHER</ship>
+		<radio>COM1</radio>
+		<freq>128.525</freq>
+	</comm>
+</event>
+<event startTime="00:03:18">
+	<!--System Monitoring task-->
+	<sysmon>
+		<monitoringLightType>RED</monitoringLightType>
+	</sysmon>
+</event>
+<event startTime="00:03:40">
+	<!--Resman task - Fix-->
+	<resman>
+		<fix>P3</fix>
+	</resman>
+</event>
+<event startTime="00:03:40">
+	<!--Communications task-->
+	<comm>
+		<ship>OWN</ship>
+		<radio>COM1</radio>
+		<freq>126.525</freq>
+	</comm>
+</event>
+<event startTime="00:04:08">
+	<!--Resman task - Fail-->
+	<resman>
+		<fail>P2</fail>
+	</resman>
+</event>
+<event startTime="00:04:23">
+	<!--System Monitoring task-->
+	<sysmon activity="START">
+		<monitoringLightType>GREEN</monitoringLightType>
+	</sysmon>
+</event>
+<event startTime="00:04:33">
+	<!--Communications task-->
+	<comm>
+		<ship>OTHER</ship>
+		<radio>COM1</radio>
+		<freq>130.875</freq>
+	</comm>
+</event>
+<event startTime="00:04:45">
+	<!--Sched task-->
+	<sched>
+		<task>TRACK</task>
+		<action>AUTO</action>
+		<update>NULL</update>
+		<response>NULL</response>
+	</sched>
+</event>
+<event startTime="00:04:56">
+	<!--Resman task - Fail-->
+	<resman>
+		<fail>P4</fail>
+	</resman>
+</event>
+<event startTime="00:05:17">
+	<!--Resman task - Fix-->
+	<resman>
+		<fix>P2</fix>
+	</resman>
+</event>
+<event startTime="00:05:19">
+	<!--Communications task-->
+	<comm>
+		<ship>OWN</ship>
+		<radio>NAV2</radio>
+		<freq>111.650</freq>
+	</comm>
+</event>
+<event startTime="00:05:40">
+	<!--Resman task - Fail-->
+	<resman>
+		<fail>P5</fail>
+	</resman>
+</event>
+<event startTime="00:06:14">
+	<!--System Monitoring task-->
+	<sysmon>
+		<monitoringLightType>RED</monitoringLightType>
+	</sysmon>
+</event>
+<event startTime="00:06:25">
+	<!--Resman task - Fix-->
+	<resman>
+		<fix>P4</fix>
+	</resman>
+</event>
+<event startTime="00:06:29">
+	<!--Resman task - Fix-->
+	<resman>
+		<fix>P5</fix>
+	</resman>
+</event>
+<event startTime="00:06:33">
+	<!--Communications task-->
+	<comm>
+		<ship>OWN</ship>
+		<radio>NAV2</radio>
+		<freq>110.500</freq>
+	</comm>
+</event>
+<event startTime="00:06:55">
+	<!--Resman task - Fail-->
+	<resman>
+		<fail>P1</fail>
+	</resman>
+</event>
+<event startTime="00:07:05">
+	<!--Resman task - Fail-->
+	<resman>
+		<fail>P4</fail>
+	</resman>
+</event>
+<event startTime="00:07:21">
+	<!--Communications task-->
+	<comm>
+		<ship>OWN</ship>
+		<radio>COM2</radio>
+		<freq>128.525</freq>
+	</comm>
+</event>
+<event startTime="00:07:37">
+	<!--System Monitoring task-->
+	<sysmon>
+		<monitoringLightType>RED</monitoringLightType>
+	</sysmon>
+</event>
+<event startTime="00:07:45">
+	<!--Sched task-->
+	<sched>
+		<task>TRACK</task>
+		<action>MANUAL</action>
+		<update>MEDIUM</update>
+		<response>HIGH</response>
+	</sched>
+</event>
+<event startTime="00:07:49">
+	<!--Resman task - Fix-->
+	<resman>
+		<fix>P4</fix>
+	</resman>
+</event>
+<event startTime="00:07:58">
+	<!--Communications task-->
+	<comm>
+		<ship>OTHER</ship>
+		<radio>NAV2</radio>
+		<freq>111.350</freq>
+	</comm>
+</event>
+<event startTime="00:08:10">
+	<!--Resman task - Fix-->
+	<resman>
+		<fix>P1</fix>
+	</resman>
+</event>
+<event startTime="00:08:30">
+	<!--Communications task-->
+	<comm>
+		<ship>OWN</ship>
+		<radio>COM1</radio>
+		<freq>129.450</freq>
+	</comm>
+</event>
+<event startTime="00:09:03">
+	<!--Communications task-->
+	<comm>
+		<ship>OTHER</ship>
+		<radio>COM2</radio>
+		<freq>120.775</freq>
+	</comm>
+</event>
+<event startTime="00:09:33">
+	<!--Sched task-->
+	<sched>
+		<task>COMM</task>
+		<action>STOP</action>
+		<update>NULL</update>
+		<response>NULL</response>
+	</sched>
+</event>
+<event startTime="00:09:57">
+	<!--Sched task-->
+	<sched>
+		<task>TRACK</task>
+		<action>AUTO</action>
+		<update>NULL</update>
+		<response>NULL</response>
+	</sched>
+</event>
+<event startTime="00:09:58">
+	<rate>START</rate>
+</event>
+<event startTime="00:10:00">
+	<control>END</control>
+</event>
+</MATB-EVENTS>

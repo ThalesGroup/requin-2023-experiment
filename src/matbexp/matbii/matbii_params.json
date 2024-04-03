@@ -1,0 +1,34 @@
+{
+    "MATBII_HIGH_PARAMS": {
+        "min_seconds_event_diff": 10,
+        "max_seconds_event_diff": 35,
+        "session_duration_minutes": 10,
+        "min_seconds_fail_fix_resman": 20,
+        "max_seconds_fail_fix_resman": 90,
+        "min_seconds_to_indicate_no_comm": 90,
+        "seconds_before_comm_stop": 30,
+        "seconds_after_comm_start": 5,
+        "n_pump_failures": 6,
+        "n_own_comm": 6,
+        "n_other_comm": 6,
+        "n_green_red_issues": 7,
+        "n_systems_up_down": 7,
+        "total_auto_minutes": 3
+    },
+    "MATBII_LOW_PARAMS": {
+        "min_seconds_event_diff": 20,
+        "max_seconds_event_diff": 70,
+        "session_duration_minutes": 10,
+        "min_seconds_fail_fix_resman": 20,
+        "max_seconds_fail_fix_resman": 90,
+        "min_seconds_to_indicate_no_comm": 90,
+        "seconds_before_comm_stop": 30,
+        "seconds_after_comm_start": 5,
+        "n_pump_failures": 2,
+        "n_own_comm": 2,
+        "n_other_comm": 3,
+        "n_green_red_issues": 3,
+        "n_systems_up_down": 3,
+        "total_auto_minutes": 6
+    }
+}
