@@ -1,25 +1,3 @@
-"""
-This is a skeleton file that can serve as a starting point for a Python
-console script. To run this script uncomment the following lines in the
-``[options.entry_points]`` section in ``setup.cfg``::
-
-    console_scripts =
-         fibonacci = matbexp.skeleton:run
-
-Then run ``pip install .`` (or ``pip install -e .`` for editable mode)
-which will install the command ``fibonacci`` inside your current environment.
-
-Besides console scripts, the header (i.e. until ``_logger``...) of this file can
-also be used as template for Python modules.
-
-Note:
-    This file can be renamed depending on your needs or safely removed if not needed.
-
-References:
-    - https://setuptools.pypa.io/en/latest/userguide/entry_point.html
-    - https://pip.pypa.io/en/stable/reference/pip_install
-"""
-
 import argparse
 import logging
 import sys
@@ -196,10 +174,9 @@ def setup_logging(loglevel: int) -> None:
 
 
 def main(args: List[str]) -> None:
-    """Wrapper allowing :func:`fib` to be called with string arguments in a CLI fashion
-
-    Instead of returning the value from :func:`fib`, it prints the result to the
-    ``stdout`` in a nicely formatted message.
+    """Wrapper allowing :func:`_create_matbii_scenarios` to be called.
+    
+    Calls the function with string arguments in a CLI fashion.
 
     Args:
       args (List[str]): command line parameters as list of strings
@@ -207,8 +184,7 @@ def main(args: List[str]) -> None:
     """
     parsed_args = parse_args(args)
     setup_logging(parsed_args.loglevel)
-    _logger.debug("Starting crazy calculations...")
-    output_folder = parsed_args.output_folder
+    output_folder = Path(parsed_args.output_folder)
     _create_matbii_scenarios(condition=CONDITION_HIGH, output_folder=output_folder)
     _create_matbii_scenarios(condition=CONDITION_LOW, output_folder=output_folder)
 
@@ -224,14 +200,4 @@ def run() -> None:
 
 
 if __name__ == "__main__":
-    # ^  This is a guard statement that will prevent the following code from
-    #    being executed in the case someone imports this file instead of
-    #    executing it as a script.
-    #    https://docs.python.org/3/library/__main__.html
-
-    # After installing your project with pip, users can also run your Python
-    # modules as scripts via the ``-m`` flag, as defined in PEP 338::
-    #
-    #     python -m matbexp.skeleton 42
-    #
     run()

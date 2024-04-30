@@ -16,6 +16,17 @@ git clone https://github.com/ThalesGroup/requin-2023-experiment.git
 pip install -e .
 ```
 
+## Running Code to Generate Files
+After installing the project as a package, you can run the code in the CLI.
+
+For example:
+
+```
+gen_matbii_events output_matbii
+```
+
+will generate the XML configuration files for MATB-II in a folder called `"output_matbii"`.
+
 ## Running Tests
 This project uses pytest for testing. After installing the project and its dependencies, you can run the tests by simply executing pytest in the project root directory.
 
