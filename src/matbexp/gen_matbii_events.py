@@ -184,7 +184,7 @@ def main(args: List[str]) -> None:
     """
     parsed_args = parse_args(args)
     setup_logging(parsed_args.loglevel)
-    output_folder = parsed_args.output_folder
+    output_folder = Path(parsed_args.output_folder)
     _create_matbii_scenarios(condition=CONDITION_HIGH, output_folder=output_folder)
     _create_matbii_scenarios(condition=CONDITION_LOW, output_folder=output_folder)
 
