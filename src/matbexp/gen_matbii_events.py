@@ -7,6 +7,9 @@ from typing import List
 from importlib_resources import files
 
 from matbexp import __version__, matbii
+from matbexp.matbii.convert_from_openmatb import (
+    matbii_generate_random_xml_with_text_file,
+)
 from matbexp.matbii.matbii_events import matbii_generate_random_xml
 from matbexp.misc.utils import import_dict_from_json
 
@@ -133,7 +136,7 @@ def parse_args(args: List[str]) -> argparse.Namespace:
     Returns:
       :obj:`argparse.Namespace`: command line parameters namespace
     """
-    parser = argparse.ArgumentParser(description="Just a Fibonacci demonstration")
+    parser = argparse.ArgumentParser(description="Generation of MATB-II parameters")
     parser.add_argument(
         "--version",
         action="version",
@@ -142,6 +145,7 @@ def parse_args(args: List[str]) -> argparse.Namespace:
     parser.add_argument(
         dest="output_folder", help="Output folder", type=str, metavar="STR"
     )
+    parser.add_argument("-t", "--text-file", type=str, default=None)
     parser.add_argument(
         "-v",
         "--verbose",
@@ -175,7 +179,7 @@ def setup_logging(loglevel: int) -> None:
 
 def main(args: List[str]) -> None:
     """Wrapper allowing :func:`_create_matbii_scenarios` to be called.
-    
+
     Calls the function with string arguments in a CLI fashion.
 
     Args:
@@ -185,9 +189,19 @@ def main(args: List[str]) -> None:
     parsed_args = parse_args(args)
     setup_logging(parsed_args.loglevel)
     output_folder = Path(parsed_args.output_folder)
-    _create_matbii_scenarios(condition=CONDITION_HIGH, output_folder=output_folder)
-    _create_matbii_scenarios(condition=CONDITION_LOW, output_folder=output_folder)
-
+    text_file = Path(parsed_args.text_file)
+    if text_file is None:
+        _create_matbii_scenarios(condition=CONDITION_HIGH, output_folder=output_folder)
+        _create_matbii_scenarios(condition=CONDITION_LOW, output_folder=output_folder)
+    else:
+        params = _get_matbii_params()
+        params_dict = params["MATBII_VERY_HIGH_PARAMS"]
+        random_xml, _, _ = matbii_generate_random_xml_with_text_file(
+            text_file, **params_dict
+        )
+        file_stem = Path(text_file).stem
+        file_path = output_folder / f"MATB_EVENTS_{file_stem}.xml"
+        file_path.write_text(random_xml)
     _logger.info("Script ends here")
 
 
