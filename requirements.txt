@@ -3,7 +3,7 @@
 importlib_metadata==7.1.0
 importlib_resources==6.4.0
 moviepy==1.0.3
-numpy==1.26.4
+numpy==2.0.0
 pillow==10.3.0
 pytest==8.1.1
 scipy==1.13.0
