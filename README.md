@@ -16,6 +16,8 @@ git clone https://github.com/ThalesGroup/requin-2023-experiment.git
 pip install -e .
 ```
 
+Note that the oldest version of Python that this project has been tested on is 3.10, while the newest version is 3.12.
+
 ## Running Code to Generate Files
 After installing the project as a package, you can run the code in the CLI.
 
