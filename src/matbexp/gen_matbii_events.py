@@ -175,7 +175,7 @@ def setup_logging(loglevel: int) -> None:
 
 def main(args: List[str]) -> None:
     """Wrapper allowing :func:`_create_matbii_scenarios` to be called.
-    
+
     Calls the function with string arguments in a CLI fashion.
 
     Args:
