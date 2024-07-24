@@ -52,7 +52,7 @@ jobs:
     strategy:
       matrix:
         python:
-        - "3.8"  # oldest Python
+        - "3.10"  # oldest Python
         - "3.12"  # newest Python
         platform:
         - ubuntu-latest
