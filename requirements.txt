@@ -2,6 +2,7 @@
 
 importlib_metadata==8.4.0
 importlib_resources==6.4.4
+moviepy==2.1.1
 moviepy==1.0.3
 numpy==2.1.3
 pillow==10.4.0
