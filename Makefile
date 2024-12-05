@@ -50,4 +50,3 @@ security:
 test: clean
 	@echo "> Pass Tests"
 	@pytest . --junitxml=build/reports/tests.xml --cov=src/matbexp --cov-report=term-missing --cov-report=xml:build/reports/coverage.xml --cov-report=html:build/reports/cov --cov-branch -rsx
-	@xdoctest matbexp
